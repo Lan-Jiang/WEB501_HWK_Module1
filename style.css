@@ -32,7 +32,9 @@
         }
         /* Nevigation */
         .main-menu {
-            margin-left: 227px;
+            /* margin-left: 227px; */
+            display: flex;
+            justify-content: end;
             font-weight: 400;
         }
         .main-menu ul li {
@@ -46,7 +48,7 @@
             text-transform: uppercase;
             font-size: 14px;
             text-align: center;
-
+            margin-top: -16px; /* when introduce flex, some value need to manual adjust*/
         }
         .main-menu ul li a {
             text-decoration: none;
@@ -78,14 +80,26 @@
         #home main p {
             font-size: 12px;
         }
+        #contact main {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 80px 70px;
+        }
+        #contact main h1 {
+            color:#9ed034;
+            padding-bottom: 15px;
+            font-size: 30px;
+        }
+        #contact main p {
+            font-size: 12px;
+        }
         /* Partners */
         section {
             width: 100%;
             background-color: #4288c3;
-            margin: 60px -70px;
+            /* margin: 60px 0; */
         }
         section #partners {
-            width: 1200px;
+            width: 100%;
             padding: 2em 0 2em 0;
             margin: 0 auto;
             text-align: center;
@@ -107,7 +121,7 @@
             height: 155px;
             padding-bottom: 1em;
             background-color: #ecfab8;
-            margin: -80px 5px;
+            /* margin: -80px 5px; */
         }
         footer #nondisclaimer .copy{
             padding: 3.5em 3.5em 3.5em 13em;
@@ -188,5 +202,72 @@
             font-weight: bold;
             background: #bde1ff;
         }
+        /* Contact */
+        .contactinfo span{
+            font-size: 12px;
+        }
+        .contactinfo span:first-child{
+            font-weight: bold;
+        }
+        /* Start contact form */
+        form {
+            width: 1000px;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        fieldset {
+            padding-top: 20px;
+            padding-left: 50px;
+        }
+        legend {
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color:#4977D1;
+        }
+        input {
+            display: block;
+        }
+        input[type="text"] {
+            width: 300px;
+        }
+        input[type="email"] {
+            width: 300px;
+        }
+        input[type="radio"] {
+            display: inline-block;
+        }
+        input[type="submit"] {
+            background: #4977D1;
+            color:#fff;
+        }
+        label {
+            font-weight: bold;
+            /* margin-top: 5px; */
+        } /*? padding*/
+        form .textbox input {
+            margin-bottom: 10px;
+            font-size:10px;
+        } /* select the right selector to apply changes*/
+        form .commentbox label {
+            display: block;
+        }
+        form .commentbox textarea {
+            width: 300px;
+            height:100px;
+        }
+        form .button {
+            width: 50px;
+        }
+        form .seletmenu select{
+            width: 300px;
+        }
+
+
+
+
+        /* End contact form */
+
+
 
 /* End external CSS for website */       
