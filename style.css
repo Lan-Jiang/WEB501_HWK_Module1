@@ -80,6 +80,15 @@
         #home main p {
             font-size: 12px;
         }
+        #activities main {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 80px 70px;
+        }
+        #activities main h1 {
+            color:#9ed034;
+            padding-bottom: 15px;
+            font-size: 30px;
+        }
         #contact main {
             font-family: Arial, Helvetica, sans-serif;
             margin: 80px 70px;
@@ -167,7 +176,7 @@
         /* Activities */
         table {
             width: 1000px;
-            margin: 4em auto 0 auto;
+            margin: 4em 2em 4em 4em;
         }
         caption {
             background: #852B1B;
@@ -224,6 +233,7 @@
             font-weight: bold;
             text-transform: uppercase;
             color:#4977D1;
+            margin-left: -20px;
         }
         input {
             display: block;
@@ -236,6 +246,8 @@
         }
         input[type="radio"] {
             display: inline-block;
+            font-size: 10px;
+            margin-bottom: 15px;
         }
         input[type="submit"] {
             background: #4977D1;
@@ -249,25 +261,31 @@
             margin-bottom: 10px;
             font-size:10px;
         } /* select the right selector to apply changes*/
+        form .selectmenu select {
+            margin-bottom: 15px;
+            width: 130px;
+            text-align: center;
+        }
         form .commentbox label {
             display: block;
         }
         form .commentbox textarea {
             width: 300px;
-            height:100px;
+            height:100px;   
         }
         form .button {
-            width: 50px;
+            margin: 10px auto 20px 200px;
+            border: none;
+            outline: none;
         }
-        form .seletmenu select{
-            width: 300px;
+        form .button input {
+            width: 105px;
+            border: none;
+            outline: none;
+            text-align: center;
+            padding: 5px 10px;
         }
-
-
-
-
+        
         /* End contact form */
-
-
 
 /* End external CSS for website */       
