@@ -17,6 +17,10 @@
             background: no-repeat lightgrey url(images/cliff_rock.jpeg);
             background-size: 1500px;        
         }
+        #cliffs header {
+            background: no-repeat lightgrey url(images/forest_cliff.jpeg);
+            background-size: 1500px;
+        }
         .main-header {
             background-color:rgba(255, 255, 255, 0.8);
             width: 700px;
@@ -79,6 +83,19 @@
         }
         #home main p {
             font-size: 12px;
+        }
+        #cliffs main {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 80px 70px;
+        }
+        #cliffs main h2 {
+            color:#9ed034;
+            padding-bottom: 15px;
+            font-size: 30px;
+        }
+        #cliffs main p {
+            font-size: 12px;
+            display: block;
         }
         #activities main {
             font-family: Arial, Helvetica, sans-serif;
@@ -285,7 +302,31 @@
             text-align: center;
             padding: 5px 10px;
         }
-        
         /* End contact form */
 
+        /* Start images gallery */
+        #images {
+            display: flex;
+            flex-flow: column; 
+            margin: 3em auto 6em 8em;
+        }
+        #images div.row {
+            display: flex;
+            flex-flow: row;
+        }
+        #images div.row a {
+            padding-left: 50px;
+        }
+        #images div.row h4 {
+            background: saddlebrown;
+            height: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            text-align: center;
+            padding-top: 20px;
+        }
+        #images img{
+            width: 350px;
+        }
+        /* End images gallery*/
 /* End external CSS for website */       
