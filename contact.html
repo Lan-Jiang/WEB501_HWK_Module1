@@ -93,7 +93,7 @@
 
 <section>
         <ul id="partners" >
-            <li class="partner">
+            <!--<li class="partner">
                 <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours">
             </li>
             <li class="partner">
@@ -110,7 +110,7 @@
             </li>
             <li class="partner">
                 <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group">
-            </li>        
+            </li>  -->      
         </ul>
 </section>  
 
@@ -129,6 +129,27 @@
     </div>
     
 </footer>
+<!-- Start change partners image in JS-->
+<script>
+    var photoList = ["bustour", "cabinrental", "campingadv", "collegetours", "rentalbike", "tourgroup"];
+    var photos = [];
+    var fileNames = [];
+    var imageList = [];
+    var image;
+    var openList = "<li class='partner'>";
+    var closeList = "</li>";
 
+    // images/partners/partner-bustour.png
+    //Create a loop to create 6 images
+    for (var i=0; i<6; i++) {
+        fileNames.push("partner-" + photoList[i]);
+        photos.push("<img src = 'images/partners/" +fileNames[i]+ ".png' >");//  
+        image = openList + photos[i] + closeList;
+        imageList.push(image);
+
+        //Display 6 images from array
+        document.getElementById("partners").innerHTML = imageList.join(" ");
+    }   
+</script><!-- End change partners image in JS-->
 </body>
 </html>
