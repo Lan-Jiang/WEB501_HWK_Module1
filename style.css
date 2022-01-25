@@ -267,7 +267,6 @@
             margin-bottom: 15px;
         }
         input[type="submit"] {
-            background: #4977D1;
             color:#fff;
         }
         label {
@@ -301,6 +300,8 @@
             outline: none;
             text-align: center;
             padding: 5px 10px;
+            /* background: #4977D1; */
+
         }
         /* End contact form */
 
