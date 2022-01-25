@@ -308,11 +308,13 @@
         #images {
             display: flex;
             flex-flow: column; 
-            margin: 3em auto 6em 8em;
+            margin-top: 3em;
+            margin-bottom: 3em;
         }
         #images div.row {
             display: flex;
             flex-flow: row;
+            justify-content: center; /* to control the pic in center */
         }
         #images div.row a {
             padding-left: 50px;

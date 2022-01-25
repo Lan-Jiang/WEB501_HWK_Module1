@@ -81,6 +81,12 @@
             <label>How did you hear about us:</label>  
             <textarea></textarea>
         </div>
+
+        <!-- Start Random Codes -->
+        <div class="randomcode">
+            <input type="text" name="randomcode" placeholder = "Enter characters">
+            <p id="codes"></p>
+        </div>
     
         <div class="button">
             <input type="submit" value="Inquire">
@@ -129,27 +135,9 @@
     </div>
     
 </footer>
-<!-- Start change partners image in JS-->
-<script>
-    var photoList = ["bustour", "cabinrental", "campingadv", "collegetours", "rentalbike", "tourgroup"];
-    var photos = [];
-    var fileNames = [];
-    var imageList = [];
-    var image;
-    var openList = "<li class='partner'>";
-    var closeList = "</li>";
 
-    // images/partners/partner-bustour.png
-    //Create a loop to create 6 images
-    for (var i=0; i<6; i++) {
-        fileNames.push("partner-" + photoList[i]);
-        photos.push("<img src = 'images/partners/" +fileNames[i]+ ".png' >");//  
-        image = openList + photos[i] + closeList;
-        imageList.push(image);
+<!-- Partners Images -->
+<script src="js/site_scripts.js"></script>
 
-        //Display 6 images from array
-        document.getElementById("partners").innerHTML = imageList.join(" ");
-    }   
-</script><!-- End change partners image in JS-->
 </body>
 </html>
