@@ -350,4 +350,26 @@
             color: #3a3a3a;
         }
         /* End JS currentTime() */
+
+        /* Start JS code generator */
+        .randomcode {
+            display: flex;
+            justify-content: space-start;
+            height: 40px;
+        }
+        .randomcode input {
+            width: 100px;
+            height: auto;
+            margin-left: 100px;
+            text-align: center;
+        }
+        .randomcode p {
+            width: 100px;
+            height: auto;
+            text-align: center;
+            background: lightgrey;
+        }
+
+        /* End JS code generator */
+
 /* End external CSS for website */       
