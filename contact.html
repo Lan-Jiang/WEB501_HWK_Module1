@@ -7,7 +7,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body id="contact">
+<body id="contact" onload="disableButton(true)">
 
 <!-- start container to wrap -->
 <div id="container">
@@ -84,12 +84,12 @@
 
         <!-- Start Random Codes -->
         <div class="randomcode">
-            <input type="text" name="randomcode" placeholder = "Enter characters">
+            <input type="text" name="randomcode" placeholder = "Enter characters" id="codeentered">
             <p id="codes"></p>
         </div>
     
-        <div class="button" onload="disableButton(true)">
-            <input type="submit" value="Inquire">
+        <div class="button" >
+            <input type="submit" value="Inquire" id="submit">
         </div> 
     </fieldset>  
     </form>
