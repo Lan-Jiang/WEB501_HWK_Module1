@@ -363,11 +363,14 @@
             margin-left: 100px;
             text-align: center;
         }
-        .randomcode p {
-            width: 100px;
-            height: auto;
+        #codes {
+            width: 95px;
+            height: 26px;
             text-align: center;
             background: lightgrey;
+            margin: 0px 0px 0px 5px;
+            padding-top: 13px;
+
         }
 
         /* End JS code generator */
