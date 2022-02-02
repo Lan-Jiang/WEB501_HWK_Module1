@@ -372,6 +372,9 @@
             padding-top: 13px;
 
         }
+        .selected {
+            background: darkgreen;
+        }
 
         /* End JS code generator */
 
