@@ -378,4 +378,34 @@
 
         /* End JS code generator */
 
+        /* Start selected activities enqueries */
+        #activities main #displaySelected {
+            visibility: hidden;
+            width: 600px;
+            border-style: solid;
+            border-color: #9ed034;
+            border-width: 4px;
+            padding: 0.25em;
+            margin-left:200px;
+        }
+        #activities main #displaySelected #result, #activities main #displaySelected #sendinfo {
+            padding-left: 150px;   
+        }
+        #activities main #result {
+            min-height: 50px;
+            width: 300px;
+            padding: 0;    
+            display: inline-block;    
+        }
+        #activities main #result h4{
+            margin-bottom:1em;
+            font-size:1.15em;
+        }
+        #activities main #displaySelected #sendinfo input[type="email"]{
+            width: 200px;
+            display: inline-block;
+        }
+        /* End selected activities enqueries */
+
+
 /* End external CSS for website */       
