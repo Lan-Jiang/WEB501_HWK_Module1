@@ -17,6 +17,8 @@ $(document).ready(function() {
     //click function and show info box
     $("td").click(function() {
         var content = $(this).text();
+        var thIndex = $(this).index();
+        var thContent = $("table").find("th").eq(thIndex).text()
 
         if (content != "Not Available") {
             $(this).toggleClass("selected");
@@ -24,7 +26,7 @@ $(document).ready(function() {
             if ($(this).hasClass("selected")) {
                 $("#displaySelected").css("visibility", "visible");
                 $("#displaySelected").css("margin-top", "2em");
-                $("#result").append("<p>" + content + "</p>");             
+                $("#result").append("<p>" + content + " at " + thContent + "</p>");             
             } else {
                 $("#result p:contains(" + content + ")").remove();
 
