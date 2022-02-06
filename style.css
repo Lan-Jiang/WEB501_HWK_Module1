@@ -387,15 +387,16 @@
             border-width: 4px;
             padding: 0.25em;
             margin-left:200px;
+            display: block;
         }
         #activities main #displaySelected #result, #activities main #displaySelected #sendinfo {
             padding-left: 150px;   
+            display: inline-block;
         }
         #activities main #result {
             min-height: 50px;
             width: 300px;
             padding: 0;    
-            display: inline-block;    
         }
         #activities main #result h4{
             margin-bottom:1em;
