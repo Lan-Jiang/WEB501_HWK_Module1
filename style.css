@@ -390,7 +390,6 @@
             display: block;
         }
         #activities main #displaySelected #result, #activities main #displaySelected #sendinfo {
-            padding-left: 150px;   
             display: inline-block;
         }
         #activities main #result {
